@@ -32,6 +32,16 @@ const home = {
                 instagram: "#",
                 tumblr: "#"
             }
+        },
+        {
+            category: "merch",
+            title: "item title4",
+            thumbnail: "https://placehold.it/400x600",
+            social: {
+                twitter: "#",
+                instagram: "#",
+                tumblr: "#"
+            }
         }
     ]
     

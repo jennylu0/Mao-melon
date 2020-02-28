@@ -8,7 +8,7 @@ export const GalleryContainer = styled.div`
 
 // GALLERY ITEM
 export const GalleryItemContainer = styled.div`
-    width: calc((100% / 3) - 15px);
+    width: 100%;
     margin-top: 15px;
     position: relative;
 
@@ -26,6 +26,14 @@ export const GalleryItemContainer = styled.div`
 
     &:hover:after {
         background-image: ${utils.gradients.maoMelon};
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% / 3) - 15px);
+    }
+
+    @media screen and (min-width: 920px) and (max-width: 1199px) {
+        width: calc((100% / 2) - 15px);
     }
 `
 
@@ -108,6 +116,10 @@ export const FilterContainer = styled.div`
     display: inline-block;
     margin: 0 1em;
     position: relative;
+
+    &:first-child {
+        margin-left: 0;
+    }
 `
 
 export const FilterText = styled.div`
